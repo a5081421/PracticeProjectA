@@ -1,0 +1,54 @@
+ol, ul {
+  list-style: none;
+  margin: 0;
+}
+
+hr, ol, pre code, ul {
+    padding: 0;
+}
+
+body, button, html, input, select, textarea {
+    color: #4d4d4d;
+    font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+    line-height: 18px;
+}
+
+.member-boards-view {
+    margin: 1pc auto;
+    padding: 1pc;
+    max-width: 1250px;
+}
+
+.boards-page-board-section {
+    margin-bottom: 20px;
+}
+
+.boards-page-board-section-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boards-page-board-section-list-item {
+  box-sizing: border-box;
+  padding: 0 1pc 8px 0;
+  position: relative;
+  width: 25%;
+}
+
+.board-title {
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 8px;
+  padding: 8px 9pt;
+  position: relative;
+  text-decoration: none;
+}
+
+.board-title-details-name {
+  display: block;
+  min-height: 5pc;
+  padding-right: 36px;
+  position: relative;
+}
