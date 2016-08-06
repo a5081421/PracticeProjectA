@@ -36,7 +36,7 @@ body, button, html, input, select, textarea {
 }
 
 .board-title {
-  background-color: #e2e4e6;
+  background-color: #0079BF;
   border-radius: 3px;
   color: #fff;
   display: block;
@@ -59,11 +59,12 @@ body, button, html, input, select, textarea {
     background-color: #e2e4e6;
     color: #8c8c8c;
     display: table-cell;
-    height: 5pc;
+    height: 6pc;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
     width: inherit;
+
 }
 
 .modal-header {

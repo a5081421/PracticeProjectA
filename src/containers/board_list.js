@@ -9,7 +9,6 @@ import BoardListItemAddComponent from '../containers/board_list_item_add';
 class BoardList extends Component {
 
   renderList() {
-    console.log("in board list", this.props)
     return this.props.board_list.map((board) => {
       return (
         <li
@@ -41,8 +40,6 @@ class BoardList extends Component {
 * @type Object
 */
 function mapStateToProps(state) {
-  // Whatever is returned will show up as props
-  // inside of BookList
   return {
     board_list: state.boards.board_list
   };

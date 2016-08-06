@@ -1,13 +1,18 @@
 /**
 * @file actions 管理
 */
-
-export const HANDLE_BOARD_MODAL = 'HANDLE_BOARD_MODAL';
-
+import * as TYPE from './types';
 
 export function handleBoardModal(show) {
   return {
-    type: HANDLE_BOARD_MODAL,
+    type: TYPE.HANDLE_BOARD_MODAL,
     payload : show
   };
+}
+
+export function createBoard(props) {
+    return {
+        type: TYPE.CREATE_BOARD,
+        payload : props
+    };
 }
