@@ -6,13 +6,18 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import { Modal, Button } from 'react-bootstrap';
-import { handleBoardModal, createBoard } from '../actions/index';
+import { handleBoardModal, createBoard, fetchBoardLists } from '../actions/index';
 
 class BoardListItemAddComponent extends Component {
     constructor(props) {
         super(props);
         this.handleModal = this.handleModal.bind(this);
     }
+
+    componentWillMount() {
+	    this.props.fetchBoardLists();
+	  }
+
 
     /**
     * @function
@@ -79,4 +84,4 @@ function mapStateToProps(state) {
 export default reduxForm({
     form: 'cread_board',
     fields: ['title','team'],
-}, mapStateToProps, {handleBoardModal, createBoard})(BoardListItemAddComponent);
+}, mapStateToProps, {handleBoardModal, createBoard, fetchBoardLists})(BoardListItemAddComponent);
