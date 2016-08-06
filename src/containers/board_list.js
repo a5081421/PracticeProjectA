@@ -4,10 +4,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import BoardListItemAddComponent from '../containers/board_list_item_add';
+
 class BoardList extends Component {
 
   renderList() {
-    return this.props.boards.map((board) => {
+    console.log("in board list", this.props)
+    return this.props.board_list.map((board) => {
       return (
         <li
           key={board.title}
@@ -26,6 +29,7 @@ class BoardList extends Component {
     return (
       <ul className="boards-page-board-section-list">
         {this.renderList()}
+        <BoardListItemAddComponent />
       </ul>
     );
   }
@@ -40,7 +44,7 @@ function mapStateToProps(state) {
   // Whatever is returned will show up as props
   // inside of BookList
   return {
-    boards: state.boards
+    board_list: state.boards.board_list
   };
 }
 
