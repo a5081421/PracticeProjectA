@@ -9,6 +9,10 @@ import BoardListItemAddComponent from '../containers/board_list_item_add';
 class BoardList extends Component {
 
   renderList() {
+      // 接API的錯誤暫時用 console.log() 呈現
+      if(this.props.error){
+          console.error("[WJ]Error from board list :", this.props.error )
+      }
     return this.props.board_list.map((board) => {
       return (
         <li
@@ -40,8 +44,10 @@ class BoardList extends Component {
 * @type Object
 */
 function mapStateToProps(state) {
+    console.log(state)
   return {
-    board_list: state.boards.board_list
+    board_list: state.boards.board_list,
+    error: state.boards.error
   };
 }
 

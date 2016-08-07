@@ -15,6 +15,10 @@ export default function(state=INIT_STATE, action) {
     case TYPE.CREATE_BOARD:
         let board_list = state.board_list.concat(action.payload)
         return {...state, board_list }  // board_list:board_list 的意思
+    case TYPE.ERROR_404:
+        return {...state, error: action.payload }
+    case TYPE.UNKNOW_ERROR:
+        return {...state, error: action.payload } 
     default:
       return state;
   }
