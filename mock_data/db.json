@@ -1,0 +1,8 @@
+{
+  "boards": [
+    { "id":1, "title": "Javascript1: The Good Parts", "color": "#00AECC" },
+    { "id":2, "title": "Harry Potter", "color": "#4D4D4D" },
+    { "id":3, "title": "The Dark Tower", "color": "#0079BF" },
+    { "id":4, "title": "Eloquent Ruby", "color": "#4BBF6B" }
+  ]
+}
