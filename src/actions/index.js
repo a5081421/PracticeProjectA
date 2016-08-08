@@ -32,7 +32,6 @@ export function fetchBoardLists() {
             });
         })
         .catch((error) => {
-            console.log("failed: ", error.response, error);
             dispatch(handleError(error.response,error));
         });
     }

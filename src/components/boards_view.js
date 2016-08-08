@@ -1,14 +1,14 @@
 /**
-* @file
+* @file  
 */
 import React, { Component } from 'react';
-
+import BoardList from '../containers/board_list';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        This is Board.
+      <div className="member-boards-view">
+        <BoardList />
       </div>
     );
   }

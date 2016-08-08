@@ -3,6 +3,7 @@
 */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 
 import BoardListItemAddComponent from '../containers/board_list_item_add';
 
@@ -18,11 +19,11 @@ class BoardList extends Component {
         <li
           key={board.title}
           className="boards-page-board-section-list-item">
-          <a className="board-title" style={{backgroundColor:board.color}}>
+          <Link to= {`b/${board.id}`}  className="board-title" style={{backgroundColor:board.color}}>
             <span className="board-title-details-name" >
                 {board.title}
             </span>
-          </a>
+          </Link>
         </li>
       );
     });
@@ -44,7 +45,6 @@ class BoardList extends Component {
 * @type Object
 */
 function mapStateToProps(state) {
-    console.log(state)
   return {
     board_list: state.boards.board_list,
     error: state.boards.error

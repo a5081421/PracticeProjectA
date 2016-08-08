@@ -13,7 +13,6 @@ export default function({ dispatch }) {
     // Make sure the action's promise resolves
     action.payload
       .then(function(response) {
-          console.log("MM: ", response, action)
         // create a new action with the old type, but
         // replace the promise with the reponse data
         const newAction = { ...action, payload: response.data };

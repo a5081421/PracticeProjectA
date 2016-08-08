@@ -12,10 +12,14 @@ import reducers from './reducers';
 import Async from './middlewares/async';
 
 
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
+
+
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+     <Router history={browserHistory} routes={routes} />
   </Provider>
   , document.querySelector('.container'));
