@@ -1,8 +1,55 @@
 {
   "boards": [
-    { "id":1, "title": "Javascript1: The Good Parts", "color": "#00AECC" },
-    { "id":2, "title": "Harry Potter", "color": "#4D4D4D" },
-    { "id":3, "title": "The Dark Tower", "color": "#0079BF" },
-    { "id":4, "title": "Eloquent Ruby", "color": "#4BBF6B" }
+    {
+      "id": 1,
+      "title": "Javascript1: The Good Parts",
+      "color": "#00AECC"
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter",
+      "color": "#4D4D4D"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Tower",
+      "color": "#0079BF"
+    },
+    {
+      "id": 4,
+      "title": "Eloquent Ruby",
+      "color": "#4BBF6B"
+    },
+    {
+      "id": 5,
+      "title": "cccc",
+      "color": "#4BBF6B"
+    }
+  ],
+  "card_lists": [
+    {
+      "id": "1",
+      "name": "Backlog",
+      "closed": false,
+      "idBoard": "1",
+      "pos": 98303.5,
+      "subscribed": false
+    },
+    {
+      "id": "2",
+      "name": "test",
+      "closed": false,
+      "idBoard": "1",
+      "pos": 163839.5,
+      "subscribed": false
+    },
+    {
+      "id": "3",
+      "name": "Done",
+      "closed": false,
+      "idBoard": "1",
+      "pos": 229375.5,
+      "subscribed": false
+    }
   ]
 }
